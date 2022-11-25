@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     # # static files
-    #"whitenoise.runserver_nostatic",
+    "whitenoise.runserver_nostatic",
     #"django.contrib.staticfiles",
 ]
 
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
       # static files
     # "django.middleware.security.SecurityMiddleware",
-    # "whitenoise.middleware.WhiteNoiseMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'social_book.urls'
@@ -135,7 +135,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # static files
 # STATIC_HOST = "http://127.0.0.1:8000/" if not DEBUG else ""
 # STATIC_URL = STATIC_HOST + "/static/"
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 django_heroku.settings(locals())
 
