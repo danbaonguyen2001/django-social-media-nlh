@@ -1,1 +1,1 @@
-web gunicorn django_social_media.wsgi:application --log-file -
+web: gunicorn django_social_media.wsgi:application --log-file -
