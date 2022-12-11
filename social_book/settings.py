@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'social_book.wsgi.application'
+WSGI_APPLICATION = 'django_social_media_nlh.wsgi.application'
 
 
 # Database
